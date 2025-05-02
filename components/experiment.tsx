@@ -86,7 +86,7 @@ export default function Experiment({ onComplete }: { onComplete?: () => void }) 
       setExperimentData((prev) => ({
         ...prev,
         currentPhase: newPhase,
-        totalPoints: (newPhase === "choice-trials-images" || newPhase === "blue-orange-trials") ? 0 : prev.totalPoints,
+        totalPoints: (newPhase === "choice-trials-images" || newPhase === "blue-orange-trials" || newPhase === "forced-trials-with-images") ? 0 : prev.totalPoints,
       }))
     }
   }
